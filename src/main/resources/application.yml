@@ -1,1 +1,7 @@
-spring.application.name=security
+spring:
+  application:
+    name: SPRING_SECURITY
+  security:
+    user:
+      name: dharani
+      password: dharani
