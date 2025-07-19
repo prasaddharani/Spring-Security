@@ -37,7 +37,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(request ->
                         request.requestMatchers("/register").permitAll()
                                 .anyRequest().authenticated())
-                .authenticationProvider(authenticationProvider())
                 .formLogin(Customizer.withDefaults())
                 .httpBasic(Customizer.withDefaults())
                 .sessionManagement(session ->
